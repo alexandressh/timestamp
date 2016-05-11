@@ -1,22 +1,22 @@
-
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
-
-
-Welcome to your Node.js project on Cloud9 IDE!
-
-This chat example showcases how to use `socket.io` with a static `express` server.
-
-## Running the server
-
-1) Open `server.js` and start the app by clicking on the "Run" button in the top menu.
-
-2) Alternatively you can launch the app from the Terminal:
-
-    $ node server.js
-
-Once the server is running, open the project in the shape of 'https://projectname-username.c9.io/'. As you enter your name, watch the Users list (on the left) update. Once you press Enter or Send, the message is shared with all connected clients.
+<div class="container">
+            <h1 class="header">
+                API Basejump: Timestamp microservice
+            </h1>
+            <blockquote>
+                User stories:
+                <ul>1) I can pass a string as a parameter, and it will check to see whether that string 
+                contains either a unix timestamp or a natural language date (example: January 1, 2016)</ul>
+                <ul>2) If it does, it returns both the Unix timestamp and the natural language form of that date.</ul>
+                <ul>3) If it does not contain a date or Unix timestamp, it returns null for those properties.</ul>
+            </blockquote>
+            <h3>Example usage:</h3>
+            <code>https://timestamp-ms.herokuapp.com/December%2015,%202015</code><br>
+            <code>https://timestamp-ms.herokuapp.com/1450137600</code>
+            <h3>Example output:</h3>
+            <code>
+                {
+                  "unix": 1450137600,
+                  "natural": "December 15, 2015"
+                }
+            </code>
+        </div>
